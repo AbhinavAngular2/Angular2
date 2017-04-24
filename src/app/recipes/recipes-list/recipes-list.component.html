@@ -1,5 +1,5 @@
  <div class="row">
-  <button class="btn btn-success">New Recipe</button>
+  <button class="btn btn-success" (click)="gotoDetail()">New Recipe</button>
   </div>
   <div class="row">
   <a href="#" class="list-group-item clearfix" *ngFor="let recipe of items">
@@ -9,5 +9,10 @@
 		<img src="{{recipe.image}}" class="img-responsive" style="max-height:150px"/>
   </span>  
   </a>
+  <p *ngIf="items.length > 3">There are many recipe!</p>
+  <input #box
+      (keyup.enter)="update(box.value)"
+      (blur)="update(box.value)"/>
+    <p>{{value}}</p>
  <app-recipesitem></app-recipesitem>
   </div>
