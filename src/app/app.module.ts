@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent }  from './app.component';
 import { HeaderComponent }  from './header/header.component';
+import { HomeComponent }  from './home/home.component';
 import { RecipesComponent }  from './recipes/recipes.component';
 import { RecipesListComponent }  from './recipes/recipes-list/recipes-list.component';
 import { RecipesDetailComponent }  from './recipes/recipes-detail/recipes-detail.component';
@@ -11,6 +12,7 @@ import { ShoppingListComponent }  from './shopping-list/shopping-list.component'
 import { ShoppingEditComponent }  from './shopping-list/shopping-edit/shopping-edit.component';
 
 const appRoutes: Routes = [
+{path:'',component:HomeComponent},
 {path:'recipes',component:RecipesComponent},
 {path:'shopping-list',component:ShoppingListComponent}
 
@@ -27,6 +29,7 @@ const appRoutes: Routes = [
   declarations: [  // list of all component which is required
   AppComponent,
   HeaderComponent,
+  HomeComponent,
   RecipesComponent,
   RecipesListComponent, 
   RecipesDetailComponent,
