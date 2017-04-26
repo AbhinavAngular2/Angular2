@@ -36,4 +36,7 @@ export class RecipesListComponent{
   }
    value = '';
   update(value: string) { this.value = value; }
+  gotoDetail(){
+  alert('AbhingotoDetail');
+  }
  }

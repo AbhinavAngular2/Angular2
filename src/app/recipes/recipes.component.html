@@ -1,5 +1,12 @@
 
 <div class="container">
+<div class="row">
+ Hi, {{user.name}} this is your {{user.id}}
+<!-- <a [routerLink]="['/recipes',10,'Abhinav']">User Abhinav</a> -->
+<a [routerLink]="['/recipes',10,'Abhinav']" 
+[queryParams]="{allowedit:'1'}"
+fragment="loading">User Abhinav</a>
+  </div>
   <div class="row">
     <div class="col-sm-5">
       <app-recipeslist></app-recipeslist>

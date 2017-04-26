@@ -14,8 +14,8 @@ import { ShoppingEditComponent }  from './shopping-list/shopping-edit/shopping-e
 const appRoutes: Routes = [
 {path:'',component:HomeComponent},
 {path:'recipes',component:RecipesComponent},
-{path:'shopping-list',component:ShoppingListComponent}
-
+{path:'recipes/:id/:name',component:RecipesComponent},
+{path:'shopping-list',component:ShoppingListComponent},
 ]
 //@NgModule takes a metadata object that tells Angular how to compile and run module code.
 //

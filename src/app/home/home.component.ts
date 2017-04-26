@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+//import { Router } from '@angular/router';
 //import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-home', // use as elememt
@@ -7,13 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent{
-   private router = Router;
+   //private router = Router;
 
-    constructor(r: Router) {
-        this.router =r;
-    }
+   // constructor(router: Router) {
+       // this.router =router;
+   // }
 
 gotoShopingList(){
- this.router.navigate(['/shopping-list']);
+ //this.router.navigate(['/shopping-list']);
+ //this.router.navigate(['/shopping-list'],{queryParam:{allowedit:'1'},fragment="loading"});
 }
  }
