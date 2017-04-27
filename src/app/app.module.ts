@@ -10,12 +10,13 @@ import { RecipesDetailComponent }  from './recipes/recipes-detail/recipes-detail
 import { RecipesItemComponent }  from './recipes/recipes-list/recipes-item/recipes-item.component';
 import { ShoppingListComponent }  from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent }  from './shopping-list/shopping-edit/shopping-edit.component';
-
+import { DirectiveComponent }  from './directive/directive.component';
 const appRoutes: Routes = [
 {path:'',component:HomeComponent},
 {path:'recipes',component:RecipesComponent},
 {path:'recipes/:id/:name',component:RecipesComponent},
 {path:'shopping-list',component:ShoppingListComponent},
+{path:'directive-list',component:DirectiveComponent},
 ]
 //@NgModule takes a metadata object that tells Angular how to compile and run module code.
 //
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
   RecipesDetailComponent,
   RecipesItemComponent,
   ShoppingListComponent,
-  ShoppingEditComponent
+  ShoppingEditComponent,
+  DirectiveComponent
   ],
   //The declarations array-- You tell Angular which components belong to the AppModule by listing it in the module's declarations array. As you create more components, you'll add them to declarations.
   //You must declare every component in an NgModule class. If you use a component without declaring it, you'll see a clear error message in the browser console.
