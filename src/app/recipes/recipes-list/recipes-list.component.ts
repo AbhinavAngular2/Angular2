@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipes-list.component.css'],
 })
 export class RecipesListComponent{
+ color: string;
+ 
  items: any[];
   constructor(){
   this.items = [{

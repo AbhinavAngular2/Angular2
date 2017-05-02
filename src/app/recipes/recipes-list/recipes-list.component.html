@@ -1,3 +1,15 @@
+ 
+ <p myHighlight>Highlight me!</p>
+ 
+  <p myHostListenerHighlight>Highlight me!</p>
+  
+  <h4>Pick a highlight color</h4>
+<div class="row">
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='blue'">blue
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [myHostListenerHighlight]="color">Highlight me!</p>
  <div class="row">
   <button class="btn btn-success" (click)="gotoDetail()">New Recipe</button>
   </div>
